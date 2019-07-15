@@ -68,9 +68,6 @@ Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
 Plugin 'majutsushi/tagbar'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-scripts/DrawIt'
-Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'derekwyatt/vim-protodef'
 Plugin 'scrooloose/nerdtree'
@@ -190,28 +187,23 @@ nnoremap <Leader>rw :call Replace(0, 1, input('Replace '.expand('<cword>').' wit
 nnoremap <Leader>rc :call Replace(1, 0, input('Replace '.expand('<cword>').' with: '))<CR>
 nnoremap <Leader>rcw :call Replace(1, 1, input('Replace '.expand('<cword>').' with: '))<CR>
 nnoremap <Leader>rwc :call Replace(1, 1, input('Replace '.expand('<cword>').' with: '))<CR>
-let g:UltiSnipsSnippetDirectories=["mysnippets"]
-let g:UltiSnipsExpandTrigger="<leader><tab>"
-let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
-let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 "highlight Pmenu ctermfg=2 ctermbg=3 guifg=#005f87 guibg=#EEE8D5
 "highlight PmenuSel ctermfg=2 ctermbg=3 guifg=#AFD700 guibg=#106900
-let g:ycm_complete_in_comments=1
+let g:ycm_complete_in_comments=0
 let g:ycm_confirm_extra_conf=0
 let g:ycm_collect_identifiers_from_tags_files=0
-set tags+=/data/misc/software/app/vim/stdcpp.tags
 inoremap <leader>; <C-x><C-o>
 set completeopt-=preview
-let g:ycm_min_num_of_chars_for_completion=1
-let g:ycm_cache_omnifunc=0
-let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_min_num_of_chars_for_completion=2
+let g:ycm_cache_omnifunc=1
+let g:ycm_seed_identifiers_with_syntax=0
 let g:disable_protodef_sorting=1
 source $VIMRUNTIME/ftplugin/man.vim
 nmap <Leader>man :Man 3 <cword><CR>
 nmap <Leader>fl :NERDTreeToggle<CR>
 let NERDTreeWinSize=22
 let NERDTreeWinPos="right"
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 let NERDTreeMinimalUI=1
 let NERDTreeAutoDeleteBuffer=1
 map <Leader>bl :MBEToggle<cr>
