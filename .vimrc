@@ -8,6 +8,7 @@ nnoremap <Leader>kw <C-W>k
 nnoremap <Leader>jw <C-W>j
 nnoremap <Leader>n <C-F>
 nnoremap <Leader>p <C-B>
+nnoremap <Leader>v <C-B>
 inoremap jk <esc>
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
