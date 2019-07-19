@@ -1,23 +1,3 @@
-# vim Plugin
-<Leader>ilt        标识符放在一个侧边子窗口中
-<leader>PP         自动生成了函数框架。
-<Leader>sw         .h 和 .cpp 快速切换
-<leader>fl         工程项目文件列表，
-<space>            选中联结对
-<leader><leader>fa 快束到a处
-<leader>ga         排版
-set                wrap  恢复拆行
-<leader>jc         和 <leader>jd  跳转到定义
-# mine mapping
-## normal
-<leader>n     <C-F>  向后一页
-<leader>p     <C-B>  向前一页
-<Leader>p     "+p
-<leader>m     make
-nw            <C-W><C-W>  到MiniBufExplorer
-## insert
-## visuall
-<Leader>y: "+y  复制到系统剪切板
 # basic
 ## 标记
 m{a-z}:  标记光标所在位置，局部标记，只用于当前文件。
@@ -50,7 +30,7 @@ $   最后一行
 .   当前行
 %   所有行
 ## regular expession
-\d   表示十进制数（我猜的）
+\d   表示十进制数
 \s   表示空格
 \S   非空字符
 \a   英文字母
@@ -94,3 +74,24 @@ zM     收起所有折行；
 zj     跳到下一个折叠处；
 zk     跳到上一个折叠处；
 zi     enable/disable fold;
+# vim Plugin
+<Leader>ilt        标识符放在一个侧边子窗口中
+<leader>PP         自动生成了函数框架。
+<Leader>sw         .h 和 .cpp 快速切换
+<leader>fl         工程项目文件列表，
+<space>            选中联结对
+<leader><leader>fa 快束到a处
+<leader>ga         排版
+set                wrap  恢复拆行
+<leader>jc         和 <leader>jd  跳转到定义
+# mine mapping
+## normal
+<leader>n     <C-F>  向后一页
+<leader>p     <C-B>  向前一页
+<Leader>p     "+p
+<leader>m     make
+nw            <C-W><C-W>  到MiniBufExplorer
+## insert
+jk <esc>
+## visuall
+<Leader>y: "+y  复制到系统剪切板
