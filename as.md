@@ -88,21 +88,20 @@
 | setb D  | below        |
 | setbe D | below equal  |
 
-| 指令         | 描述          |
-| jmp Lable    | 直接跳转      |
-| jmp *Operand | 间接跳转      |
-| je Lable     | equal         |
-| jne Lable    | not equal     |
-| js Lable     | minus         |
-| jns Lable    | not minus     |
-| 有符号       |               |
-| jg Lable     | greater       |
-| jge Lable    | equal greater |
-| jl Lable     | less          |
-| jle Lable    | equal less    |
-| 无符号       |               |
-| ja Lable     | above         |
-| jae Lable    | equal above   |
-| jb Lable     | below         |
-| jbe Lable    | equal below   |
-
+| 指令          | 描述          |
+| jmp Lable     | 直接跳转      |
+| jmp \*Operand | 间接跳转      |
+| je Lable      | equal         |
+| jne Lable     | not equal     |
+| js Lable      | minus         |
+| jns Lable     | not minus     |
+| 有符号        |               |
+| jg Lable      | greater       |
+| jge Lable     | equal greater |
+| jl Lable      | less          |
+| jle Lable     | equal less    |
+| 无符号        |               |
+| ja Lable      | above         |
+| jae Lable     | equal above   |
+| jb Lable      | below         |
+| jbe Lable     | equal below   |

@@ -57,12 +57,14 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
+
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nathanaelkane/vim-inguides'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'kshenoy/vim-signature'
 Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
@@ -86,10 +88,6 @@ filetype plugin indent on
 
 "let g:SuperTabDefaultCompletionType="context"
 
-fun! ToggleFullscreen()
-	call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
-endf
-map <silent> <F11> :call ToggleFullscreen()<CR>
 
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
@@ -199,8 +197,6 @@ let g:ycm_min_num_of_chars_for_completion=2
 let g:ycm_cache_omnifunc=1
 let g:ycm_seed_identifiers_with_syntax=0
 let g:disable_protodef_sorting=1
-source $VIMRUNTIME/ftplugin/man.vim
-nmap <Leader>man :Man 3 <cword><CR>
 nmap <Leader>fl :NERDTreeToggle<CR>
 let NERDTreeWinSize=22
 let NERDTreeWinPos="right"
