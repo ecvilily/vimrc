@@ -11,10 +11,10 @@
 | %rax | %eax  | %ax   | %al   | 返回值       |
 | ---- | ----- | ----- | ----- | ------------ |
 | %rbx | %ebx  | %bx   | %bl   | 被调用者保存 |
-| %rcx | %ecx  | %cx   | %cl   | 第4个参数    |
-| %rdx | %edx  | %dx   | %dl   | 第3个参数    |
-| %rsi | %esi  | %si   | %sil  | 第2个参数    |
-| %rdi | %edi  | %di   | %dil  | 第1个参数    |
+| %rcx | %ecx  | %cx   | %cl   | 第1个参数    |
+| %rdx | %edx  | %dx   | %dl   | 第2个参数    |
+| %rsi | %esi  | %si   | %sil  | 第3个参数    |
+| %rdi | %edi  | %di   | %dil  | 第4个参数    |
 | %rbp | %ebp  | %bp   | %bpl  | 被调用者保存 |
 | %rsp | %esp  | %sp   | %spl  | 栈指针       |
 | %r8  | %r8d  | %r8w  | %r8b  | 第5个参数    |
@@ -90,7 +90,7 @@
 
 | 指令          | 描述          |
 | jmp Lable     | 直接跳转      |
-| jmp \*Operand | 间接跳转      |
+| jmp Operand | 间接跳转      |
 | je Lable      | equal         |
 | jne Lable     | not equal     |
 | js Lable      | minus         |
